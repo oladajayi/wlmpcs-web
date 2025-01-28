@@ -1,0 +1,56 @@
+.uploadPage{
+    margin: 100px auto;
+    background-color: rgb(93, 93, 154);
+    border-radius: 20px;
+    color: greenyellow;
+    padding: 25px;
+    font-size: 1.2rem;
+    width: 50%;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+p{
+margin: 15px;
+}
+
+input{
+    display: block;
+    margin: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: auto; 
+    white-space: pre-wrap;
+    width: 80%;
+}
+
+button{
+    display: block;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: greenyellow;;
+}
+
+pre{
+margin-top: 20px;
+width: 100%;
+overflow: auto; 
+white-space: pre-wrap;
+}
+
+.backToMembers a{
+    text-decoration: none;
+}
+
+.backToMembers button{
+background-color: whitesmoke;
+color: brown;
+cursor: pointer;
+padding: 8px;
+border-radius: 6px;
+font-size: 1.1rem;
+font-weight: bolder;
+}

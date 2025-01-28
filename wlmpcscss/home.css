@@ -1,0 +1,85 @@
+.welcom-page {
+    background-color: #20c997;
+    color: black;
+    width: 300px;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 25px auto;
+    width: 90%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.our-motto {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+} 
+.motto{
+    text-align: center;
+    width: 50px;
+    margin: 4px auto;
+    color: #6610f2;
+    border-bottom: 2px solid #6610f2;
+    font-size: 1.3rem;
+}
+.create-account{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.member-login{
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: white;
+}
+.member-login span{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: rgb(56, 10, 56);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form{
+    display: none;
+}
+
+form p{
+ margin-top: 10px;
+ font-size: 1.1rem;
+ text-align: center;
+}
+
+input {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin: 5px auto;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+button {
+    display: block;
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    margin: 15px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status-message{
+    width: 60%;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgb(225, 225, 211);
+}

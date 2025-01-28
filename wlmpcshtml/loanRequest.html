@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WAEC LOKOJA MULTI PURPOSE COOPERATIVE SOCIETY</title>
+        <link rel="stylesheet" href="../wlmpcscss/general.css" >
+        <link rel="stylesheet" href="../wlmpcscss/loanRequest.css" >
+        
+    </head>
+
+    <body>
+        <header>
+            <img id = "mpcs-logo" alt="WSPMCS Lokoja" src="../allimages/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="terms.html">OUR TERMS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="back"><a href="members.html"><button>Back</button></a></div>
+            <div class="loanRecord" id="loan-record"><span id="apply">Apply for Loan</span><span id="record">Loan Record</span><span id="loanguaranteed">Guarantee a Loan</span></div>
+            <div class="loanContainer" id="loan-container"></div>
+            <form id="loan-request-form">
+                <fieldset>
+                    <legend>Loan Request</legend>
+                <div><label for="loan-amount">Amount:</label>
+                <input class="user-input" id="loan-amount" type="number" name="loanAmount" required></div>
+                <div><input class="radioInput" type="radio" name="loanType" id="normal-short" value="5"><span>Normal (5% for maximum of 18 months)</span></div>
+                <div><input class="radioInput" type="radio" name="loanType" id="normal-long" value="7"><span>Normal (7% for maximum of 24 months)</span></div>
+                <div><input class="radioInput" type="radio" name="loanType" id="special-short" value="7.5"><span>Short Special (7.5% for maximum of 6 months)</span></div>
+                <div><input class="radioInput" type="radio" name="loanType" id="special-mid" value="10"><span>Mid Special (10% for maximum of 9 months)</span></div>
+                <div><input class="radioInput" type="radio" name="loanType" id="special-long" value="12.5"><span>Long Special (12.5% for maximum of 12 months)</span></div>
+                <div><input class="radioInput" type="radio" name="loanType" id="essential-loan" value="10.0"><span>Essential Loan (10% for maximum of 3 months)</span></div>
+                <div><input class="radioInput" type="radio" name="loanType" id="essential-commodity" value="3"><span>Essential Commodity (3% for maximum of 3 months)</span></div>
+
+                <div><label for="firstGuarantor">First Guarantor:</label>
+                <select class="user-input" id="firstGuarantor"  name="first-guarantor" required></select></div>
+                <div><label for="secondGuarantor">Second Guarantor:</label>
+                <select class="user-input" id="secondGuarantor" name="second-guarantor" required></select></div>
+
+                <div><label for="duration">Duration:</label>
+                <input class="user-input" id="duration" type="number" name="duration" max="24" required></div>
+                <div class="loan-summary">
+                    <span>Amount: <strong id="amount"></strong></span>
+                    <span>Interest: <strong id="interest"></strong></span>
+                    <span>Total Package: <strong id="totalPackage"></strong></span>
+                    <span>Monthly Deduction: <strong id="monthly-deduction"></strong></span>
+                    <span>Repayment Duration: <strong id="repayment-duration"></strong></span>
+                </div>
+                
+                <div><input id="confirmduration" type="checkbox" required><span> I hereby confirm that I agreed to the terms and conditions</span></div>
+                <button type="submit">Submit</button>
+            </fieldset>
+            </form>
+        </main>
+        <footer><p>&copy; 2024 David04. All rights reserved.</p></footer>
+        <script src="../all-scripts/loanRequest.js"></script>
+    </body>
+     
+</html>

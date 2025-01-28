@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WAEC LOKOJA MULTI PURPOSE COOPERATIVE SOCIETY</title>
+        <link rel="stylesheet" href="../wlmpcscss/general.css">
+        <link rel="stylesheet" href="../wlmpcscss/manager.css">
+        <link rel="stylesheet" href="../wlmpcscss/fileUpload.css">
+        <link rel="stylesheet" href="../wlmpcscss/listofAllMembers.css">
+        <link rel="stylesheet" href="../wlmpcscss/monthlySavings.css">
+        <link rel="stylesheet" href="../wlmpcscss/matchDeductionToLoan.css">
+        <link rel="stylesheet" href="../wlmpcscss/monthlyDeduction.css">
+        <link rel="stylesheet" href="../wlmpcscss/loan-not-yet-approved.css">
+        <link rel="stylesheet" href="../wlmpcscss/granted.css">
+        <link rel="stylesheet" href="../wlmpcscss/outstandingLoan.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/xlsx@latest/dist/xlsx.full.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img id = "mpcs-logo" alt="WSPMCS Lokoja" src="../allimages/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="terms.html">OUR TERMS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="members-total total-member-savings">Total mebers Savings: <span id="total-member-savings"></span></div>
+            <div class="members-total total-normal-loan">Total Outstanding Normal Loan: <span id="total-normal-loan" ></span></div>
+            <div class="members-total total-special-loan">Total Outstanding Special Loan: <span id="total-special-loan"></span></div>
+            <div class="members-total manageAll"><span id="allMembers-loan">Loan</span><span id="members-deduction">Deduction</span><span id="membersList">Members</span><span id="upload">Upload</span></div>  
+        </main>
+       
+
+        <div class="mebersContainer" id="members-container">
+            <div id="allSavingsFromDeduction" class="savingsFromDeduction">
+                <div class="deduction-group">
+                    <span id="monthly-savings">Monthly Savings</span>
+                    <span id="match-deduction">Match Deductions</span>
+                    <span id="confirm-deductions">Confirm Deductions</span>
+                </div>
+                <div id="try-it"></div>
+            </div>
+        </div>
+
+
+        <footer><p>&copy; 2024 David04. All rights reserved.</p></footer>
+        <script type="module" src="../all-scripts/manager.js"></script>
+        <script type="module" src="../all-scripts/fileUpload.js"></script>
+        <script type="module" src="../all-scripts/listOfAllMembers.js"></script>
+        <script type="module" src="../all-scripts/monthlySavings.js"></script>
+        <script type="module" src="../all-scripts/matchDeductionToLoan.js"></script>
+        <script type="module" src="../all-scripts/monthlyDeduction.js"></script>
+        <script type="module" src="../all-scripts/loan-not-yet-approved.js"></script>
+        <script type="module" src="../all-scripts/granted.js"></script>
+        <script type="module" src="../all-scripts/outstandingLoan.js"></script>
+    </body>
+     
+</html>

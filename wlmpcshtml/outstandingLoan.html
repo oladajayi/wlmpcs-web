@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WAEC LOKOJA MULTI PURPOSE COOPERATIVE SOCIETY</title>
+        <link rel="stylesheet" href="../wlmpcscss/general.css">
+        <link rel="stylesheet" href="../wlmpcscss/outstandingLoan.css">
+    </head>
+
+    <body></body>
+        <main id="alloutstandingLoans">
+            <div class="outstandings">
+                <div class="outstanding-profile"><span id="${lpNumber}">LP${lpNumber}</span><span >${findLP.name}</span></div>
+                <div class="outstanding">Outstanding Normal Loan: ${formatOutstandingToNaira(ValidOutstandingLoan)}</div>
+                <div class="outstanding">Outstanding Special Loan: ${formatOutstandingToNaira(savingDeduction)}</div>
+            </div>
+        </main>
+        
+        <footer><p>&copy; 2024 David04. All rights reserved.</p></footer>
+        <script type="module" src="../all-scripts/outstandingLoan.js"></script>
+    </body>
+     
+</html>

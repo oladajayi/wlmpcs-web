@@ -1,0 +1,32 @@
+.outstandings{
+    margin: 55px;
+    background-color: #3d683f;
+    border-radius: 18px;
+    display: flex;
+    flex-direction:column ;
+    padding: 15px;
+}
+
+.outstanding-profile{
+    color: rgb(35, 23, 23);
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+   }
+.outstanding-profile span{
+    
+    margin: 10px;
+    
+   }
+
+   .outstanding{
+    color: white;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 1.2rem;
+   }

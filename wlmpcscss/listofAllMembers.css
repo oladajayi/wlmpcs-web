@@ -1,0 +1,190 @@
+.all-members-list {
+    margin: 75px auto;
+    background-color: rgb(70, 70, 41);
+    color: rgb(227, 223, 211);
+    border-radius: 12px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    max-width: 800px;
+    max-width: 700px;
+}
+
+.member-list-heading{
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    
+}
+
+.memberListSpan{
+    width: 100%;
+    display: flex;;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: black;
+    padding: 15px;
+    font-size: 1.1rem;
+   border-top-right-radius: 9px;
+   border-top-left-radius: 9px;
+}
+
+
+.memberListSpan span{
+    text-align: center;
+    width: 25%;
+}
+
+.each-member{
+    width: 100%;
+    display: flex;;
+    flex-direction: row;
+    background-color: black;
+    padding: 8px;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+
+.each-member span{
+   width: 25%;
+    cursor: pointer;
+    text-align: center;
+    color: blue;
+}
+
+
+.all-members-list .each-member:nth-child(even) {
+    background-color: beige;
+}
+
+.all-members-list .each-member:hover {
+    background-color: white;
+}
+
+.profileDisplay{
+    background-color: rgb(25, 16, 32);
+    color: white;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 5px auto;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+
+.member-profile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.personalDetails, .downloadTransaction{
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-member{
+position: relative;
+background-color: green;
+padding: 10px;
+margin: 5px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.profileDisplay a{
+    text-decoration: none;
+}
+
+.member-profile p{
+    margin: 10px;
+}
+
+.show-member:active{
+    background-color: aquamarine;
+    color: white;
+}
+
+.personalDetails dialog, .editMembersRecord dialog {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fefefe;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    top: 60%;  
+    left:30%;
+}
+
+.btn {
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-continue {
+    background-color: green;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: red;
+    color: white;
+}
+
+.decide, .editDecide{
+    display: flex;
+    justify-content: space-between;
+}
+
+.editMembersRecord .btn-cancel{
+    background-color: red;
+    color: white;
+}
+
+.editMembersRecord{
+    background-color: #fefefe;
+    color: blue;
+    width: 60%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+
+.editMembersRecord input {
+    padding: 5px;
+    font-size: 1.1rem;
+}
+.editMembersRecord button {
+    background-color: green;
+}
+
+.downloadTransaction button {
+    background-color: green;
+}
+
+
+.hideProfile{
+    display: none;
+}
+
+.resetSuccessMessage {
+    background-color: white;
+    color: green;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 4px;
+    width: 60%;
+    margin: 10px auto;
+}

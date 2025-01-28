@@ -1,0 +1,111 @@
+main{
+    margin: 110px auto;
+    color:rgb(29, 29, 91);
+    padding: 40x;
+}
+
+
+fieldset {
+    border: 2px solid #333;
+    padding: 10px;
+    width: 400px;
+    margin: 35px auto;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  label,.loan-summary{
+    margin-top: 10px;
+  }
+
+  label{
+    display: inline-block;
+    width: 130px;
+    font-size: 1rem;
+   
+  }
+
+  input, select{
+    margin: 10px;
+    padding-left: 8px;
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .user-input{
+    width: 225px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 5px;
+   
+  }
+  .loan-summary span{
+    display: block;
+  }
+button{
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    margin: 5px auto;
+    width: 40%;
+    background-color: green;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.loanRecord{
+  display: flex;
+  justify-content: center;
+}
+.loanRecord span{
+  padding: 10px;
+  background-color: rgb(35, 159, 236);
+  color: rgb(243, 208, 208);
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 7px;
+}
+.loanRecord span:active{
+  background-color: lightgreen;
+}
+
+.loanOwner{
+width: 400px;
+background-color: bisque;
+color: blue;
+margin: 15px auto;
+border-radius: 12px;
+padding: 10px;
+font-size: 1.1rem;
+}
+
+.loanApplied{
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+}
+
+.loanOwner label{
+  width: 230px;
+  font-size: 1.1rem;
+}
+.back{
+  width: 70px;
+  margin: 5px auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+a button {
+  width: 65px;
+}
