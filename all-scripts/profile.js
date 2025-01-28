@@ -1,3 +1,35 @@
+
+
+
+
+
+ const changeProfileStatus = (memberLp) => {
+  
+    let allManager = {
+      lpNumber: memberLp,
+    };
+  
+    // Retrieve the manager record from local storage or initialize an empty array
+    let managerRecord = JSON.parse(localStorage.getItem("managerRecord"))|| [];
+    
+  
+    // Check if the manager already exists in the record
+    const findManager = managerRecord.find((manager) => manager.lpNumber === memberLp);
+  
+    // Add the manager if not already present
+    if (!findManager) {
+      managerRecord.push(allManager);
+    
+    // Save the updated record to local storage
+    localStorage.setItem("managerRecord", stringify(managerRecord));
+    }
+};
+
+
+
+changeProfileStatus("10698");
+
+
 const userProfile = JSON.parse(localStorage.getItem("currentUser")); // Retrieve current user from storage
 const managerLp = JSON.parse(localStorage.getItem("managerRecord")) || []; // Retrieve managerRecord from storage
 let profileStatus = ""
