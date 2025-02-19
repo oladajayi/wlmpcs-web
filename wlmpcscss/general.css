@@ -1,0 +1,69 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+   
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../allimages/background.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    background-color: #8e9296;
+    color:  white;
+}
+ footer p{
+    font-size: 1.1rem;
+    margin: 15px auto;
+ }
+
+.mpcs-logo {
+    width: 70px;  /* Set fixed width */
+    height: 70px;  /* Set fixed height */
+    border-radius: 35px;
+    object-fit: contain; /* Ensures image scales properly inside fixed size */
+}
+header{
+    background-color: #043425;
+}
+header button {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1rem;
+}
+header .nav-link{
+    border-radius: 6px;
+    background-color: #3f4c48;
+    color: blanchedalmond;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

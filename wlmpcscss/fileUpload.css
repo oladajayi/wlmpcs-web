@@ -1,0 +1,33 @@
+.uploadPage {
+    margin: 30px auto;
+    background-color: rgb(93, 93, 154);
+    border-radius: 20px;
+    color: greenyellow;
+    padding: 25px;
+    font-size: 1.2rem;
+    width: 50% !important;
+    min-width: 350px;
+    max-width: 400px !important;
+}
+
+p {
+    margin: 15px;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: auto; 
+    white-space: pre-wrap;
+    width: 80%;
+}
+
+pre {
+    margin-top: 20px;
+    width: 100%;
+    overflow: auto; 
+    white-space: pre-wrap;
+}
+

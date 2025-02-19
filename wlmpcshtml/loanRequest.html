@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WAEC LOKOJA MULTI PURPOSE COOPERATIVE SOCIETY</title>
+        <link rel="stylesheet" href="../wlmpcscss/general.css" >
+        <link rel="stylesheet" href="../wlmpcscss/loanRequest.css" >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+    <body>
+        <header class="container-fluid p-3">
+            <div class="row align-items-center">
+              <!-- Logo Section -->
+              <div class="col-4 col-md-3">
+                <img id="mpcs-logo" alt="WSPMCS Lokoja" src="../allimages/logo.png" class="img-fluid mpcs-logo">
+              </div>
+          
+              <!-- Navigation Section -->
+              <nav class="col-8 col-md-7 d-flex justify-content-center">
+                <ul class="nav justify-content-evenly w-100">
+                  <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link" href="terms.html">OUR TERMS</a></li>
+                </ul>
+              </nav>
+          
+              <!-- Logout Button -->
+              <div class="col-12 col-md-2 d-flex justify-content-end justify-content-md-start mt-md-0">
+                <button class="btn btn-danger p-1">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </button>
+              </div>
+          </header>
+        <main  class="container-fluid p-3 mt-2  main-loan" >
+            <div class="btn d-block mx-auto back"><a href="members.html"><button>
+              <i class="fas fa-chevron-left"></i> Back
+            </button></a></div>
+            <div class="loanRecord m-3" id="loan-record"><span id="apply">Apply</span><span id="record">Record</span><span id="loanguaranteed">Guarantor</span></div>
+            <div class="loanContainer mt-5" id="loan-container"></div>
+            <form id="loan-request-form">
+                <fieldset class="m-4 mx-auto p-4 w-75">
+                    <legend>Loan Request</legend>
+                <div class="row"><label class="col-3" for="loan-amount">Amount:</label>
+                <input class=" col-8 user-input" id="loan-amount" type="number" name="loanAmount" required></div>
+                <div class="row mt-2 align-items-center"><input class="col-1 radioInput" type="radio" name="loanType" id="normal-short" value="5"><span class="col-11">Normal (5% for maximum of 18 months)</span></div>
+                <div class="row mt-2 align-items-center"><input class="col-1 radioInput" type="radio" name="loanType" id="normal-long" value="7"><span class="col-11">Normal (7% for maximum of 24 months)</span></div>
+                <div class="row mt-2 align-items-center"><input class="col-1 radioInput" type="radio" name="loanType" id="special-short" value="7.5"><span class="col-11">Short Special (7.5% for maximum of 6 months)</span></div>
+                <div class="row mt-2 align-items-center"><input class="col-1 radioInput" type="radio" name="loanType" id="special-mid" value="10"><span class="col-11">Mid Special (10% for maximum of 9 months)</span></div>
+                <div class="row mt-2 align-items-center"><input class="col-1 radioInput" type="radio" name="loanType" id="special-long" value="12.5"><span class="col-11">Long Special (12.5% for maximum of 12 months)</span></div>
+                <div class="row mt-2 align-items-center"><input class="col-1 radioInput" type="radio" name="loanType" id="essential-loan" value="10.0"><span class="col-11">Essential Loan (10% for maximum of 3 months)</span></div>
+                <div class="row mt-2 align-items-center"><input class="col-1 radioInput" type="radio" name="loanType" id="essential-commodity" value="3"><span class="col-11">Essential Commodity (3% for maximum of 3 months)</span></div>
+
+                <div class="row mt-3 d-flex justify-content-between"><label class="col-3" for="firstGuarantor">First Guarantor:</label>
+                <select class="col-8 user-input" id="firstGuarantor"  name="first-guarantor" required></select></div>
+                <div class="row mt-3 d-flex justify-content-between"><label class="col-3" for="secondGuarantor">Second Guarantor:</label>
+                <select class="col-8 user-input" id="secondGuarantor" name="second-guarantor" required></select></div>
+
+                <div class="row mt-3 d-flex justify-content-between"><label class="col-3" for="duration">Duration:</label>
+                <input class="col-8 user-input" id="duration" type="number" name="duration" max="24" required></div>
+                <div class="loan-summary">
+                    <div class="row mt-2"><span class="col-6" >Amount: </span><span class="col-6 text-start"><strong id="amount"></strong></span></div>
+                    <div class="row mt-2"><span class="col-6">Interest: </span><span class="col-6 text-start"><strong id="interest"></strong></span></div>
+                    <div class="row mt-2"><span class="col-6">Total Package: </span><span class="col-6 text-start"><strong id="totalPackage"></strong></span></div>
+                    <div class="row mt-2"><span class="col-6">Monthly Deduction: </span><span class="col-6 text-start"><strong id="monthly-deduction"></strong></span></div>
+                    <div class="row mt-2"><span class="col-6">Repayment Duration: </span><span class="col-6 text-start"><strong id="repayment-duration"></strong></span></div>
+                </div>
+                
+                <div class="row mt-3 align-items-center"><input class="col-1 confirmduration" id="confirmduration" type="checkbox" required><span class="col-11"> I hereby confirm that I agreed to the terms and conditions</span></div>
+                <button class="btn btn-primary mx-auto mt-3" type="submit">
+                    <i class="fas fa-paper-plane"></i> Submit
+                </button>
+            </fieldset>
+            </form>
+        </main>
+        <footer><p>&copy; 2024 David04. All rights reserved.</p></footer>
+        <script src="../all-scripts/loanRequest.js"></script>
+    </body>
+     
+</html>

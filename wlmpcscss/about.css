@@ -1,0 +1,23 @@
+.about {
+    margin-top: 110px;
+    color: darkcyan;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.our-name {
+   text-align: center;
+   font-size: 1.3rem; 
+   margin: 20px 20px 30px 20px;
+   color: blue;
+}
+
+.about p { 
+    font-size: 1.2rem;
+    margin: 20px;  
+}
+
+.about-list li {
+    margin: 15px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,82 @@
+main {
+    margin: 110px auto;
+    background-color: rgb(70, 70, 41);
+    color: rgb(227, 223, 211);
+    border-radius: 12px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    width: 50%;        
+    min-width: 200px;  
+    max-width: 500px; 
+}
+
+.edit-profile,.manager{
+background-color: green;
+color: blanchedalmond;
+cursor: pointer;
+padding: 6px;
+border-radius: 6px;
+}
+
+.profile-container div,.profile-account,.next-of-kin{
+    margin: 25px 0px 20px 0px;
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.generate-savings button{
+    background-color: green;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 8px;
+    color: blanchedalmond;
+    cursor: pointer;
+ }
+ .backMembers button{
+    background-color: white;
+    color: brown;
+    font-weight: bold;
+    margin-top: 0px;
+    padding: 4px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+ }
+
+ .profile,.personal{
+    margin: 25px 0px 20px 0px;
+ }
+ .profileDisplay{
+    display: none;
+ }
+
+ .hideMemberProfile{
+    display: none;
+ }
+
+ .disabled-input {
+   background-color: #e9ecef !important;
+   cursor: not-allowed;
+ }
+
+ .memberProfileDialog, .saveChangesDialog{
+   background-color: white;
+   color: rgb(26, 120, 84);
+   border-radius: 6px;
+   max-width: 50vw; /* Prevents excessive width */
+   width: 100%; /* Ensures it adapts to parent */
+   margin: auto; /* Centers it */
+   padding: 1rem; /* Adjusts padding */
+   overflow: hidden; /* Prevents scrollbars */
+}
+   
+.decide .btn {
+   max-width: 150px; /* Keeps button sizes in check */
+}
+
+.password-toggle {
+   cursor: pointer;
+}
+ 
