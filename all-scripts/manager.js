@@ -91,7 +91,7 @@ document.getElementById("manager-container").classList.add("shift-up");
 
 const displayLoanEl = document.getElementById("members-container");
 displayLoanEl.innerHTML = `<div id="allLoans" class="all-loan">
-                    <div class="loan-group">
+                    <div class="loan-group w-90 d-flex mx-auto justify-content-between">
                         <span id="loan-applications">Application</span>
                         <span id="granted-loans">Granted</span>
                         <span id="outstanding-loans">Outstanding</span>
@@ -118,8 +118,8 @@ document.getElementById("members-deduction").addEventListener("click", () => {
     document.getElementById("manager-container").classList.add("shift-up");
 
     const displayLoanEl = document.getElementById("members-container");
-    displayLoanEl.innerHTML = `<div id="allSavingsFromDeduction" class="savingsFromDeduction">
-            <div class="deduction-group">
+    displayLoanEl.innerHTML = `<div id="allSavingsFromDeduction" class="savingsFromDeduction w-90">
+            <div class="deduction-group d-flex w-100 justify-content-between mx-auto">
                 <span id="monthly-savings">Monthly Savings</span>
                 <span id="match-deduction">Match Deductions</span>
                 <span id="confirm-deductions">Confirm Deductions</span>

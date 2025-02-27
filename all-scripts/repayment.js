@@ -7,7 +7,7 @@ export function generateDepositorInput(changeColor) {
 
         const loanTypeEl = document.getElementById("loan-type");
         loanTypeEl.innerHTML = `
-            <div class="row mt-4 d-flex justify-content-center chose">
+            <div class="row mt-4 d-flex justify-content-between chose mx-auto">
                 <span class="col-5 p-2 text-center text-white bg-dark rounded me-2" id="loanRepayment">Loan Repayment</span>
                 <span class="col-5 p-2 text-center text-white bg-secondary rounded" id="makeSavings">Make Savings</span>
             </div>`;
@@ -26,7 +26,7 @@ export function generateDepositorInput(changeColor) {
 
 function createMemberDropdown(loanTypeEl, paymentType) {
     loanTypeEl.innerHTML = `
-        <div class="card p-3 mt-3 shadow-lg" style="background-color: #464629; color: #e3dfd3;">
+        <div class="card p-3 mt-3 shadow-lg w-90 mx-auto" style="background-color: #464629; color: #e3dfd3;">
             <form id="amount-paid-form" class="w-100">
                 <h4 class="text-center mb-3">${paymentType}</h4>
                 <div class="mb-3">

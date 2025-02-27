@@ -18,22 +18,22 @@ console.log(allLoanInstorage);
 
 allLoanInstorage.forEach((eachLoan) => {
             
-                let loanType = eachLoan.normalLoan === "normalLoan" ? "Normal Loan" : "Special Loan";
-                let loanAmount = eachLoan.normalLoan === "normalLoan" ? eachLoan.normalLoan : eachLoan.specialLoan;
+                let loanType = eachLoan.normalLoan? "Normal Loan" : "Special Loan";
+                let loanAmount = eachLoan.normalLoan? eachLoan.normalLoan : eachLoan.specialLoan;
 
                 allLoanToApproveHTML += `
-                    <div class="loanRequestProfile" data-removed-id="${eachLoan.lpNumber}">
-                        <div class="loanAwaitingApproval">
-                            <span>LP${eachLoan.lpNumber}</span>
-                            <span>${eachLoan.name}</span>
+                    <div class="loanRequestProfile w-90" data-removed-id="${eachLoan.lpNumber}">
+                        <div class="loanAwaitingApproval row">
+                            <span class="col-6">LP${eachLoan.lpNumber}</span>
+                            <span class="col-6 text-start">${eachLoan.name}</span>
                         </div>
-                        <div class="loanAwaitingApproval">
-                            <span>Loan: ${toNairaCurrency(loanAmount)}</span>
-                            <span>Interest: ${toNairaCurrency(eachLoan.interest)}</span>
+                        <div class="loanAwaitingApproval row">
+                            <span class="col-6">Loan: ${toNairaCurrency(loanAmount)}</span>
+                            <span class="col-6 text-start">Interest: ${toNairaCurrency(eachLoan.interest)}</span>
                         </div>
-                        <div class="loanAwaitingApproval">
-                            <span>Total: ${toNairaCurrency(eachLoan.total)}</span>
-                            <span>${loanType}</span>
+                        <div class="loanAwaitingApproval row">
+                            <span class="col-6">Total: ${toNairaCurrency(eachLoan.total)}</span>
+                            <span class="col-6 text-start">${loanType}</span>
                         </div>
                         <div class="guarantorDetails row align-items-center">
                             <div class="col-2">

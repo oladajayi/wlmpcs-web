@@ -238,18 +238,18 @@ loanLocalStorage.find((loan) => {
     if(findLpOne === currentUser.lpNumber){
         
         formEl.style.display = "none";
-        loanContainerHTML += `<div class="loanOwner w-75" data-removed-id="${loan.lpNumber}">
-                <div class="loanApplied">
-                    <span>Lp${loan.lpNumber}</span>
-                    <span>${loan.name}</span>
+        loanContainerHTML += `<div class="loanOwner w-90" data-removed-id="${loan.lpNumber}">
+                <div class="loanApplied row">
+                    <span class="col-6">Lp${loan.lpNumber}</span>
+                    <span class="col-6 text-start">${loan.name}</span>
                 </div>
-                <div class="loanApplied">
-                    <span>Loan: ${toNairaCurrency(loan.normalLoan)}</span>
-                    <span>Interest: ${toNairaCurrency(loan.interest)}</span>
+                <div class="loanApplied row">
+                    <span class="col-6">Loan: ${toNairaCurrency(loan.normalLoan)}</span>
+                    <span class="col-6 text-start">Interest: ${toNairaCurrency(loan.interest)}</span>
                 </div>
-                <div class="loanApplied">
-                    <span>Total: ${toNairaCurrency(loan.total)}</span>
-                    <span>Normal Loan</span>
+                <div class="loanApplied row">
+                    <span class="col-6">Total: ${toNairaCurrency(loan.total)}</span>
+                    <span class="col-6 text-start">Normal Loan</span>
                 </div>
                 <div class="guarantors">
                     <input type="checkbox" name="${loan.firstGuarantorId}" id="${loan.lpNumber}">
@@ -260,18 +260,18 @@ loanLocalStorage.find((loan) => {
             
         }else if(findLpTwo === currentUser.lpNumber){
         formEl.style.display = "none";
-        loanContainerHTML += `<div class="loanOwner w-75" data-removed-id="${loan.lpNumber}">
-                <div class="loanApplied">
-                    <span>Lp${loan.lpNumber}</span>
-                    <span>${loan.name}</span>
+        loanContainerHTML += `<div class="loanOwner w-90" data-removed-id="${loan.lpNumber}">
+                <div class="loanApplied row">
+                    <span class="col-6">Lp${loan.lpNumber}</span>
+                    <span class="col-6 text-start">${loan.name}</span>
                 </div>
-                <div class="loanApplied">
-                    <span>Loan: ${toNairaCurrency(loan.normalLoan)}</span>
-                    <span>Interest: ${toNairaCurrency(loan.interest)}</span>
+                <div class="loanApplied row">
+                    <span class="col-6">Loan: ${toNairaCurrency(loan.normalLoan)}</span>
+                    <span class="col-6 text-start">Interest: ${toNairaCurrency(loan.interest)}</span>
                 </div>
-                <div class="loanApplied">
-                    <span>Total: ${toNairaCurrency(loan.total)}</span>
-                    <span>Normal Loan</span>
+                <div class="loanApplied row">
+                    <span class="col-6">Total: ${toNairaCurrency(loan.total)}</span>
+                    <span class="col-6 text-start">Normal Loan</span>
                 </div>
                 <div class="guarantors">
                     <input type="checkbox" name="${loan.secondGuarantorId}" id="${loan.lpNumber}">
@@ -301,18 +301,18 @@ recordEl.addEventListener("click", () => {
     
         if (grantedLoan.lpNumber === currentUser.lpNumber) {
             
-            myLoanHistoryHTML += `<div class="loanOwner w-75">
-                    <div class="loanApplied">
-                        <span>Lp${grantedLoan.lpNumber}</span>
-                        <span>${grantedLoan.name}</span>
+            myLoanHistoryHTML += `<div class="loanOwner w-90">
+                    <div class="loanApplied row">
+                        <span class="col-6">Lp${grantedLoan.lpNumber}</span>
+                        <span class="col-6 text-start">${grantedLoan.name}</span>
                     </div>
-                    <div class="loanApplied">
-                        <span>Loan: ${toNairaCurrency(grantedLoan.normalLoan || grantedLoan.specialLoan )}</span>
-                        <span>Interest: ${toNairaCurrency(grantedLoan.interest)}</span>
+                    <div class="loanApplied row">
+                        <span class="col-6">Loan: ${toNairaCurrency(grantedLoan.normalLoan || grantedLoan.specialLoan )}</span>
+                        <span class="col-6 text-start">Interest: ${toNairaCurrency(grantedLoan.interest)}</span>
                     </div>
-                    <div class="loanApplied">
-                        <span>Total: ${toNairaCurrency(grantedLoan.total)}</span>
-                        <span>Normal Loan</span>
+                    <div class="loanApplied row">
+                        <span class="col-6">Total: ${toNairaCurrency(grantedLoan.total)}</span>
+                        <span class="col-6 text-start">Normal Loan</span>
                     </div>
                     <div class="guarantors">
                         <input type="checkbox" name="${grantedLoan.firstGuarantorId}" id="${grantedLoan.firstGuarantorId}">

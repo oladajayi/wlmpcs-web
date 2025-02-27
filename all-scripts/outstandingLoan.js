@@ -25,7 +25,7 @@ getOutstandingLoans.forEach((outstandingrecord) => {
     let specialLoanAmount = parseFloat(outstandingrecord.specialLoan);
     
     alloustandinLoanHTML += `
-        <div class="outstanding-container mt-3">
+        <div class="outstanding-container mt-3 w-90">
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="outstandings p-3 shadow-sm">
@@ -33,8 +33,8 @@ getOutstandingLoans.forEach((outstandingrecord) => {
                             <span id="${outstandingrecord.lpNumber}">LP${outstandingrecord.lpNumber}</span>
                             <span>${outstandingrecord.name}</span>
                         </div>
-                        <div class="outstanding">Outstanding Normal Loan: ${toNairaCurrency(normalLoanAmount)}</div>
-                        <div class="outstanding">Outstanding Special Loan: ${toNairaCurrency(specialLoanAmount)}</div>
+                        <div class="outstanding">Outstanding Normal Loan:  ${toNairaCurrency(normalLoanAmount)}</div>
+                        <div class="outstanding">Outstanding Special Loan:  ${toNairaCurrency(specialLoanAmount)}</div>
                     </div>
                 </div>
             </div>

@@ -23,18 +23,18 @@ grantedLoans.forEach((grantedLoan) => {
     let loanAmount = grantedLoan.hasOwnProperty("normalLoan") ? grantedLoan.normalLoan : grantedLoan.specialLoan;
 
     loanGrantedHTML += `
-        <div class="loanGrantedtProfile card p-3 mb-3 mt-4 shadow-sm" data-removed-id="${grantedLoan.lpNumber}">
-            <div class="loanGranted d-flex justify-content-between">
-                <span>Lp${grantedLoan.lpNumber}</span>
-                <span>${grantedLoan.name}</span>
+        <div class="loanGrantedtProfile card p-3 mb-3 mt-4 shadow-sm w-90" data-removed-id="${grantedLoan.lpNumber}">
+            <div class="loanGranted row">
+                <span class="col-6">Lp${grantedLoan.lpNumber}</span>
+                <span class="col-6 text-start">${grantedLoan.name}</span>
             </div>
-            <div class="loanGranted d-flex justify-content-between">
-                <span>Loan: ${toNairaCurrency(loanAmount)}</span>
-                <span>Interest: ${toNairaCurrency(grantedLoan.interest)}</span>
+            <div class="loanGranted row">
+                <span class="col-6">Loan: ${toNairaCurrency(loanAmount)}</span>
+                <span class="col-6 text-start">Interest: ${toNairaCurrency(grantedLoan.interest)}</span>
             </div>
-            <div class="loanGranted d-flex justify-content-between">
-                <span>Total: ${toNairaCurrency(grantedLoan.total)}</span>
-                <span>${loanType}</span>
+            <div class="loanGranted row">
+                <span class="col-6">Total: ${toNairaCurrency(grantedLoan.total)}</span>
+                <span class="col-6 text-start">${loanType}</span>
             </div>
             <div class="loanGrantedGuarantor row d-flex align-items-center">
                     <div class="col-1">

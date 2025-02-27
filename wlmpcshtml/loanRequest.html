@@ -16,12 +16,12 @@
         <header class="container-fluid p-3">
             <div class="row align-items-center">
               <!-- Logo Section -->
-              <div class="col-4 col-md-3">
+              <div class="col-3 col-md-3">
                 <img id="mpcs-logo" alt="WSPMCS Lokoja" src="../allimages/logo.png" class="img-fluid mpcs-logo">
               </div>
           
               <!-- Navigation Section -->
-              <nav class="col-8 col-md-7 d-flex justify-content-center">
+              <nav class="col-9 col-md-8 d-flex justify-content-center">
                 <ul class="nav justify-content-evenly w-100">
                   <li class="nav-item md-2 mt-1"><a class="nav-link" href="home.html">HOME</a></li>
                   <li class="nav-item md-2 mt-1"><a class="nav-link" href="about.html">ABOUT</a></li>
@@ -34,19 +34,20 @@
                 </ul>
               </nav>
           
-              <!-- Logout Button -->
-              <div class="col-12 col-md-2 d-flex justify-content-end justify-content-md-start mt-md-0">
-                
-              </div>
           </header>
         <main  class="container-fluid p-3 mt-2  main-loan" >
-            <div class="btn d-block mx-auto back"><a href="members.html"><button>
+          <div class="btn d-block mx-auto back">
+            <a href="members.html">
+              <button>
               <i class="fas fa-chevron-left"></i> Back
-            </button></a></div>
-            <div class="loanRecord m-3" id="loan-record"><span id="apply">Apply</span><span id="record">Record</span><span id="loanguaranteed">Guarantor</span></div>
+              </button>
+            </a>
+          </div>
+            <div class="loanRecord m-2" id="loan-record"><span id="apply">Apply</span><span id="record">Record</span><span id="loanguaranteed">Guarantor</span></div>
             <div class="loanContainer mt-5" id="loan-container"></div>
+           
             <form id="loan-request-form">
-                <fieldset class="m-4 mx-auto p-4 w-90">
+                <fieldset class="m-2 mx-auto p-4 w-90">
                     <legend>Loan Request</legend>
                 <div class="row"><label class="col-3" for="loan-amount">Amount:</label>
                 <input class=" col-8 user-input" id="loan-amount" type="number" name="loanAmount" required></div>
