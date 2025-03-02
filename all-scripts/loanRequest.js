@@ -301,7 +301,7 @@ recordEl.addEventListener("click", () => {
     
         if (grantedLoan.lpNumber === currentUser.lpNumber) {
             
-            myLoanHistoryHTML += `<div class="loanOwner w-90 mx-auto">
+            myLoanHistoryHTML += `<div class="loanOwner w-75 mx-auto">
                     <div class="loanApplied row">
                         <span class="col-6">Lp${grantedLoan.lpNumber}</span>
                         <span class="col-6 text-start">${grantedLoan.name}</span>
