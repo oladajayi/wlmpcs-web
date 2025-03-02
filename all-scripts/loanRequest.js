@@ -238,7 +238,7 @@ loanLocalStorage.find((loan) => {
     if(findLpOne === currentUser.lpNumber){
         
         formEl.style.display = "none";
-        loanContainerHTML += `<div class="loanOwner w-90 mx-auto" data-removed-id="${loan.lpNumber}">
+        loanContainerHTML += `<div class="loanOwner w-75 mx-auto" data-removed-id="${loan.lpNumber}">
                 <div class="loanApplied row">
                     <span class="col-6">Lp${loan.lpNumber}</span>
                     <span class="col-6 text-start">${loan.name}</span>
@@ -260,7 +260,7 @@ loanLocalStorage.find((loan) => {
             
         }else if(findLpTwo === currentUser.lpNumber){
         formEl.style.display = "none";
-        loanContainerHTML += `<div class="loanOwner w-90  mx-auto" data-removed-id="${loan.lpNumber}">
+        loanContainerHTML += `<div class="loanOwner w-75  mx-auto" data-removed-id="${loan.lpNumber}">
                 <div class="loanApplied row">
                     <span class="col-6">Lp${loan.lpNumber}</span>
                     <span class="col-6 text-start">${loan.name}</span>
@@ -301,7 +301,7 @@ recordEl.addEventListener("click", () => {
     
         if (grantedLoan.lpNumber === currentUser.lpNumber) {
             
-            myLoanHistoryHTML += `<div class="loanOwner w-90 mx-auto">
+            myLoanHistoryHTML += `<div class="loanOwner w-75 mx-auto">
                     <div class="loanApplied row">
                         <span class="col-6">Lp${grantedLoan.lpNumber}</span>
                         <span class="col-6 text-start">${grantedLoan.name}</span>
