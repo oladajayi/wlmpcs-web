@@ -202,7 +202,7 @@ function editMemberProfile(userProfile,managerLp){
     profileContaineEl.innerHTML += `
          
      <div id="edit-members-record" class="editMembersRecord">
-      <dialog id="save-changes-dialog" class="saveChangesDialog p-2 mx-auto fs-4"">
+      <dialog id="save-changes-dialog" class="saveChangesDialog p-2 mx-auto fs-4">
             <p id="saveChangesMessage" class="text-center">Are you sure you want to submit the changes?</p>
             <div class="editMemberDecide row g-0 decide">
                 <div class="col-6 d-flex justify-content-center">
