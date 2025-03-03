@@ -118,14 +118,15 @@ document.getElementById("members-deduction").addEventListener("click", () => {
     document.getElementById("manager-container").classList.add("shift-up");
 
     const displayLoanEl = document.getElementById("members-container");
-    displayLoanEl.innerHTML = `<div id="allSavingsFromDeduction" class="savingsFromDeduction w-90">
-            <div class="deduction-group d-flex w-100 justify-content-between mx-auto">
-                <span id="monthly-savings">Monthly Savings</span>
-                <span id="match-deduction">Match Deductions</span>
-                <span id="confirm-deductions">Confirm Deductions</span>
-            </div>
-            <div id="try-it"></div>`;    
-
+    displayLoanEl.innerHTML =
+            `<div id="allSavingsFromDeduction" class="savingsFromDeduction w-90">
+                <div class="deduction-group d-flex w-100 justify-content-between mx-auto">
+                    <span id="monthly-savings">Monthly Savings</span>
+                    <span id="match-deduction">Match Deductions</span>
+                    <span id="confirm-deductions">Confirm Deductions</span>
+                </div>
+                <div id="try-it"></div>    
+            </div>`
             document.getElementById("members-container").classList.add("adjust-margin-up");         
     })
 
