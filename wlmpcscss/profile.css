@@ -65,8 +65,8 @@ p{
    background-color: white;
    color: rgb(26, 120, 84);
    border-radius: 6px;
-   max-width: 50vw; /* Prevents excessive width */
-   width: 100%; /* Ensures it adapts to parent */
+   max-width: 60vw; /* Prevents excessive width */
+   width: 100%;  /* Ensures it adapts to parent */
    margin: auto; /* Centers it */
    padding: 1rem; /* Adjusts padding */
    overflow: hidden; /* Prevents scrollbars */
