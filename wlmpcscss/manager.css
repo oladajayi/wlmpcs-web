@@ -62,10 +62,6 @@
 
 
 
-
-
-
-
 .container-wrapper {
     position: relative;
     transition: transform 0.5s ease-in-out; /* Smooth movement */
@@ -82,19 +78,6 @@
     margin-top: 20px;
 }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .deduction-group{
@@ -136,6 +119,10 @@
 .loan-group{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 .loan-group span{
     background-color: green;
