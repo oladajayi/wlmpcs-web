@@ -90,15 +90,16 @@ document.getElementById("allMembers-loan").addEventListener("click", () => {
 document.getElementById("manager-container").classList.add("shift-up");
 
 const displayLoanEl = document.getElementById("members-container");
-displayLoanEl.innerHTML = `<div id="allLoans" class="all-loan">
-                    <div class="loan-group mx-auto">
-                        <span id="loan-applications">Application</span>
-                        <span id="granted-loans">Granted</span>
-                        <span id="outstanding-loans">Outstanding</span>
-                        <span id="loan-repayment">Repayment</span>
-                    </div>
-                    <div id="loan-type" class="loanType"></div>
-                      </div>`;
+displayLoanEl.innerHTML = `
+                    <div id="allLoans" class="all-loan">
+                        <div class="loan-group">
+                            <span id="loan-applications">Application</span>
+                            <span id="granted-loans">Granted</span>
+                            <span id="outstanding-loans">Outstanding</span>
+                            <span id="loan-repayment">Repayment</span>
+                        </div>
+                        <div id="loan-type" class="loanType"></div>
+                    </div>`;
                      
                       document.getElementById("members-container").classList.add("adjust-margin-up");    
 
@@ -118,8 +119,8 @@ document.getElementById("members-deduction").addEventListener("click", () => {
     document.getElementById("manager-container").classList.add("shift-up");
 
     const displayLoanEl = document.getElementById("members-container");
-    displayLoanEl.innerHTML =
-            `<div id="allSavingsFromDeduction" class="savingsFromDeduction w-90">
+    displayLoanEl.innerHTML = `
+            <div id="allSavingsFromDeduction" class="savingsFromDeduction w-90">
                 <div class="deduction-group d-flex w-100 justify-content-between mx-auto">
                     <span id="monthly-savings">Monthly Savings</span>
                     <span id="match-deduction">Match Deductions</span>
