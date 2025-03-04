@@ -121,6 +121,8 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    width: 75%;
+    margin: 1px auto;
     flex-wrap: wrap;
     margin-top: 10px;  
 }
