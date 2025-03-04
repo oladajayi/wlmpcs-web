@@ -120,8 +120,8 @@ document.getElementById("members-deduction").addEventListener("click", () => {
 
     const displayLoanEl = document.getElementById("members-container");
     displayLoanEl.innerHTML = `
-            <div id="allSavingsFromDeduction" class="savingsFromDeduction w-90">
-                <div class="deduction-group d-flex w-100 justify-content-between mx-auto">
+            <div id="allSavingsFromDeduction" class="savingsFromDeduction">
+                <div class="deduction-group d-flex w-75 justify-content-between mx-auto">
                     <span id="monthly-savings">Monthly Savings</span>
                     <span id="match-deduction">Match Deductions</span>
                     <span id="confirm-deductions">Confirm Deductions</span>
