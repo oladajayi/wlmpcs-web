@@ -91,7 +91,7 @@ document.getElementById("manager-container").classList.add("shift-up");
 
 const displayLoanEl = document.getElementById("members-container");
 displayLoanEl.innerHTML = `
-                    <div id="allLoans" class="all-loan">
+                    <div id="allLoans" class="all-loan bg-light">
                         <div class="loan-group">
                             <span id="loan-applications">Application</span>
                             <span id="granted-loans">Granted</span>
