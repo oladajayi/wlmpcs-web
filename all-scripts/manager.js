@@ -91,14 +91,14 @@ document.getElementById("manager-container").classList.add("shift-up");
 
 const displayLoanEl = document.getElementById("members-container");
 displayLoanEl.innerHTML = `
-                    <div id="allLoans" class="all-loan bg-light">
+                    <div id="allLoans" class="all-loan">
                         <div class="loan-group">
                             <span id="loan-applications">Application</span>
                             <span id="granted-loans">Granted</span>
                             <span id="outstanding-loans">Outstanding</span>
                             <span id="loan-repayment">Repayment</span>
                         </div>
-                        <div id="loan-type" class="loanType w-75 mx-auto"></div>
+                        <div id="loan-type" class="loanType mx-auto"></div>
                     </div>`;
                      
                       document.getElementById("members-container").classList.add("adjust-margin-up");    
@@ -126,7 +126,7 @@ document.getElementById("members-deduction").addEventListener("click", () => {
                     <span id="match-deduction">Match Deductions</span>
                     <span id="confirm-deductions">Confirm Deductions</span>
                 </div>
-                <div id="try-it" class="deductionType w-75 mx-auto"></div>    
+                <div id="try-it" class="deductionType mx-auto"></div>    
             </div>`
             document.getElementById("members-container").classList.add("adjust-margin-up");         
     })
