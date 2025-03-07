@@ -98,7 +98,7 @@ displayLoanEl.innerHTML = `
                             <span id="outstanding-loans">Outstanding</span>
                             <span id="loan-repayment">Repayment</span>
                         </div>
-                        <div id="loan-type" class="loanType"></div>
+                        <div id="loan-type" class="loanType w-75 mx-auto"></div>
                     </div>`;
                      
                       document.getElementById("members-container").classList.add("adjust-margin-up");    
@@ -121,12 +121,12 @@ document.getElementById("members-deduction").addEventListener("click", () => {
     const displayLoanEl = document.getElementById("members-container");
     displayLoanEl.innerHTML = `
             <div id="allSavingsFromDeduction" class="savingsFromDeduction">
-                <div class="deduction-group d-flex w-75 justify-content-between mx-auto">
+                <div class="deduction-group">
                     <span id="monthly-savings">Monthly Savings</span>
                     <span id="match-deduction">Match Deductions</span>
                     <span id="confirm-deductions">Confirm Deductions</span>
                 </div>
-                <div id="try-it"></div>    
+                <div id="try-it" class="deductionType w-75 mx-auto"></div>    
             </div>`
             document.getElementById("members-container").classList.add("adjust-margin-up");         
     })
