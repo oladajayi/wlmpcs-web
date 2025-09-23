@@ -1,0 +1,69 @@
+.loanRequestProfile {
+    margin: 30px auto;
+    background-color: #f8e7e580;
+    border-radius: 18px;
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+.loanAwaitingApproval {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 1.1rem;
+    color: blue;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.reject {
+    cursor: pointer;
+    background-color: red;
+    color: antiquewhite;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.approve {
+    cursor: pointer;
+    background-color: green;
+    color: antiquewhite;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.guarantorDetails {
+    color: blue;
+    margin-bottom: 5px;
+}
+
+.guarantorDetails input { 
+    font-size: 1.1rem;
+}
+
+.loanButtons {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .loanRequestProfile {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    .loanAwaitingApproval {
+        font-size: 1rem;
+    }
+    .loanButtons button {
+        font-size: 0.9rem;
+    }
+}

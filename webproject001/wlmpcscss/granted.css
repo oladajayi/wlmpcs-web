@@ -1,0 +1,23 @@
+.loanGrantedtProfile {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 18px;
+    max-width: 500px;
+    font-size: 1rem;
+}
+
+.loanGranted {
+    padding: 5px;
+    font-size: 1rem;
+    color: blue;
+}
+
+.loanGrantedGuarantor {
+    color: blue;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.loanGrantedGuarantor input {
+    width: 20px;
+}

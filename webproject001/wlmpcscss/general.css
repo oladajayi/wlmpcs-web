@@ -1,0 +1,129 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+   
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../allimages/background.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    background-color: #8e9296;
+    color:  white;
+}
+ footer p{
+    font-size: 1.1rem;
+    margin: 15px auto;
+ }
+
+.mpcs-logo {
+    width: 70px;  
+    height: 70px;  
+    border-radius: 35px;
+    object-fit: contain; 
+}
+header{
+    background-color: #043425;
+}
+header button {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+header .nav-link{
+    border-radius: 6px;
+    background-color: #3f4c48;
+    color: blanchedalmond;
+}
+
+.navbar-toggler-icon {
+    background-image: none; 
+    border: 1px solid #fff;
+    width: 30px;  
+    height: 30px; 
+}
+
+.navbar-toggler::before {
+    content: "\2630";  
+    font-size: 24px;
+    color: #fff;  
+}
+
+/* Sidebar Styles */
+#sidebarNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;                  
+    width: 150px;                        
+    background-color: rgb(188, 182, 176);;
+    transform: translateX(-100%);   
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050;                 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+/* Show sidebar when expanded */
+#sidebarNav.show {
+    transform: translateX(0);
+}
+
+/* Style for nav links in sidebar */
+.side-nav-link {
+    color: #043425;
+    border-bottom: 1px solid #3f4c48;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px auto; 
+display: block;
+}
+
+.side-nav-link:hover {
+    background-color: #3f4c48;
+   
+} 
+
+.navbar-toggler {
+    z-index: 1100; 
+}
+
+
+.navSide {
+    list-style-type: none;        
+    padding: 0;                   
+    display: flex;               
+    flex-direction: column;       
+    align-items: center;  
+    justify-content: center;
+    margin-top: 50px;  
+    width: 100%;    
+}
+
+.side-nav-item {
+    margin: 10px auto; 
+    width: 100%;         
+}
+
+
+
+
+
+
+
+

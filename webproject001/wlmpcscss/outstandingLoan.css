@@ -1,0 +1,30 @@
+.outstandings {
+    background-color: #3d683f;  /* Maintains the green background */
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 20px;  /* Adds spacing between cards */
+    width: 100%;  /* Makes it responsive */
+}
+
+.outstanding-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.outstanding-profile span {
+    margin: 5px;
+}
+
+.outstanding {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 1.2rem;
+}

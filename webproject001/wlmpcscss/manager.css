@@ -1,0 +1,142 @@
+.managerMain {
+    margin: 30px auto;
+    margin-top: 65px;
+    background-color: rgb(70, 70, 41);
+    color: rgb(227, 223, 211);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 450px;
+    
+}
+
+.members-total {
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    gap: 10px;
+}
+
+.right {
+    flex: 1; 
+    text-align: left; 
+}
+.left {
+    flex: 2; 
+    text-align: left;
+}
+
+.manageAll {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.manageAll span {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+    background-color: green;
+    color: blanchedalmond;
+    margin-left: 5px; 
+}
+
+.manageAll span:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+
+
+.container-wrapper {
+    position: relative;
+    transition: transform 0.5s ease-in-out; /* Smooth movement */
+    
+}
+
+.shift-up {
+    transform: translateY(-120px); /* Moves the container up */
+    margin-top: 80px;
+}
+
+.adjust-margin-up{
+    transform: translateY(-100px); /* Moves the container up */
+    margin-top: 20px;
+}
+ 
+
+
+.deduction-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px auto;
+    width: 70% ;
+    max-width: 400px;
+    gap: 10px;
+}
+
+
+.deduction-group span{
+    flex: 1;
+    display: flex;
+    background-color: green;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center; 
+    color: white;
+    width: 90px;
+}
+.savingsFromDeduction{
+    display: none;
+}
+.hide{
+    display: none;
+}
+
+.all-loan{
+    width: 85%; 
+    margin: 5px auto;
+}
+
+.loan-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 500px;
+    margin: 7px auto;
+    flex-wrap: wrap;   
+}
+
+.loan-group span{
+    flex: 1;
+    background-color: green;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.deductionType, .loanType{
+    max-width: 400px;
+}
+
+
+
