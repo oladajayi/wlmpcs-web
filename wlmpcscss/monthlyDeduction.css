@@ -1,0 +1,40 @@
+.monthlyDeduction {
+    background-color: rgb(70, 70, 41);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.memberDeduction {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 8px;
+}
+
+.memberDeduction span {
+    margin-right: 15px;
+}
+
+.unconfirm {
+    background: red;
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+}
+
+.formatedDeduction {
+    background-color: green;
+    padding: 6px;
+    border-radius: 4px;
+    width: 120px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    margin: 14px;
+}

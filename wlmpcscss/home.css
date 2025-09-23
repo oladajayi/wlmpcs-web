@@ -1,0 +1,80 @@
+.welcom-page {
+    background-color: #20c997;
+    color: black;
+    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
+    margin: 120px auto;
+    border-radius: 10px;
+}
+
+.welcom-page h1 {
+    margin: 25px auto;
+    width: 90%;
+    font-size: 1.2rem;
+}
+.our-motto {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+} 
+.motto{
+    text-align: center;
+    width: 50px;
+    margin: 4px auto;
+    color: #6610f2;
+    border-bottom: 2px solid #6610f2;
+    font-size: 1.3rem;
+}
+.create-account{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.member-login{
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: white;
+}
+.member-login span{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: rgb(56, 10, 56);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form{
+    display: none;
+}
+
+form p{
+ margin-top: 10px;
+ margin-bottom: 2px;
+ font-size: 1.1rem;
+ text-align: center;
+}
+
+.welcom-page button{
+    background-color: white important!;
+    color: #20c997;
+    box-shadow: 0px 6px 8px rgba(39, 2, 2, 0.6);
+}
+
+.adjustFailed{
+    max-width: 250px;
+    width: 100%;
+}
+.p-eye{
+    cursor: pointer;
+}
+
+.loginForm input {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  
+  
